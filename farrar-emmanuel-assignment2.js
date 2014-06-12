@@ -34,9 +34,9 @@ var procedureFunction = function(myPrompt)
 //Boolean Function: 
 var booleanFunction = function (myConfirm,food)
 {
-	var food;    //variable to identify type of food
+	var food; //variable to identify type of food
 //while loop to compare food type from function call
-	while (myConfirm === true)
+	while (myConfirm === true && myPrompt === true)
 {
 		if (food === "Buttons in a Blanket")
 		{
@@ -91,14 +91,3 @@ console.log("If you do well we will add you to the raid team and you will be abl
 
 
 
-
-
-
-
-
-
-
-
-
-
-//OUTPUT
