@@ -34,7 +34,18 @@ var procedureFunction = function(myPrompt)
 var booleanFunction = function (myConfirm,food)
 {
 var food;
-
+while (myConfirm === true)
+{
+	if (food === "Buttons in a Blanket")
+	{
+	console.log("The best food buff for DPS is " + food + ".");
+	break;
+	}else{
+	console.log("The best food buff for Tanks and Healers is " + food +".");
+	break;
+	}
+}
+	return food;
 };
 
 //Number Function: 
@@ -44,13 +55,16 @@ var numberFunction = function ()
 };
 
 //MAIN CODE
-
-//function call
-procedureFunction (myPrompt);
-
-//PROMPT AND CONFIRMS
-
 //myConfirm = confirm("CONFIRM SOMETHING");
+//function call
+procedureFunction(myPrompt);
+myConfirm = confirm("CONFIRM SOMETHING");
+booleanReturn = booleanFunction(myConfirm, "Buttons in a Blanket");
+
+
+
+
+
 
 
 
