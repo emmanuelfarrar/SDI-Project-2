@@ -4,13 +4,60 @@
   Project 2
 */
 
-//global variables
+//GLOBAL VARIABLES
+var myPrompt; 
+var myConfim;
+var stringVar;
+var numberVar;
+var booleanVar;
+var booleanReturn;
+var numberReturn;
+var stringReturn; 
 
 
-//functions
+//FUNCTIONS
+
+//Procedure using value given from variable myPrompt
+var procedureFunction = function(myPrompt)
+{
+	myPrompt = prompt("Ask some sort of question");  //prompting user to give an answer
+	if (myPrompt === "Mannie")
+	{
+	console.log ("ENTER TEXT HERE");
+	}else{
+	console.log("ENTER ALT TEXT HERE");
+	}
+};
 
 
-//main code
+//Boolean Function: 
+var booleanFunction = function (myConfirm,food)
+{
+var food;
+
+};
+
+//Number Function: 
+var numberFunction = function ()
+{
+
+};
+
+//MAIN CODE
+
+//function call
+procedureFunction (myPrompt);
+
+//PROMPT AND CONFIRMS
+
+//myConfirm = confirm("CONFIRM SOMETHING");
 
 
-//output
+
+
+
+
+
+
+
+//OUTPUT
