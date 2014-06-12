@@ -79,7 +79,7 @@ return playerJob;
 procedureFunction(myPrompt);
 myConfirm = confirm("CONFIRM SOMETHING");
 booleanReturn = booleanFunction(myConfirm, "Buttons in a Blanket");
-numberReturn = numberFunction(2);
+numberReturn = numberFunction(5);
 stringFunction();
 
 
