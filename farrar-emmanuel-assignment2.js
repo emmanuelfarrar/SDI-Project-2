@@ -21,12 +21,12 @@ var stringReturn;
 //Procedure using value given from variable myPrompt
 var procedureFunction = function(myPrompt)
 {
-	myPrompt = prompt("Ask some sort of question");  //prompting user to give an answer
-	if (myPrompt === "Mannie")
+	myPrompt = prompt("Are you ready to show the team how a Bard battles?", "Enter 'Yes' or 'No'");  //prompting user to give an answer
+	if (myPrompt === "Yes")
 	{
-	console.log ("ENTER TEXT HERE");
+	console.log ("We have our bard let's make sure he is ready");
 	}else{
-	console.log("ENTER ALT TEXT HERE");
+	console.log("You are either not ready or entered invalid data. Please reload the page and try again.");
 	}
 };
 
@@ -43,7 +43,7 @@ var booleanFunction = function (myConfirm,food)
 		console.log("The best food buff for DPS is " + food + ".");
 		break;
 		}else{
-		console.log("The best food buff for Tanks and Healers is " + food +".");
+		console.log("FYI: The best food buff for Tanks and Healers is " + food +".");
 		break;
 		}
 }
@@ -54,7 +54,7 @@ var booleanFunction = function (myConfirm,food)
 var numberFunction = function ()
 {
 var numFood;
-var someThing = new Array (1, 2, 3, 4);
+var someThing = new Array (1, 2, 3, 4);  //local array for simple math
 //loop to count food usage
 var loopCounter;
 	for (loopCounter = 0; loopCounter < 4; loopCounter++)
@@ -75,10 +75,15 @@ return localStrVar;
 
 //MAIN CODE
 procedureFunction(myPrompt);
-myConfirm = confirm("CONFIRM SOMETHING");
+myConfirm = confirm("You are aware that you need to have a food buff for this?");
+console.log("We may need to talk about the food you need for the best food buff");
 booleanReturn = booleanFunction(myConfirm, "Buttons in a Blanket");
+console.log("We will start you off with 10 pieces of food, but here are the statics if you eat one per run for 4 runs.");
 numberReturn = numberFunction();
+console.log("So you can see if you have to make multiple runs you will run out of food quicker");
+console.log("You are ready now. We will log you as... ");
 stringReturn = stringFunction("DPS", "Bard");
+console.log("If you do well we will add you to the raid team and you will be able to help us next week, so good luck!!!");
 
 
 
