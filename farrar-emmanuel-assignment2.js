@@ -51,36 +51,37 @@ var booleanFunction = function (myConfirm,food)
 };
 
 //Number Function: 
-var numberFunction = function (numVar)
+var numberFunction = function ()
 {
 var numFood;
-//need to find a use to loop this
+var someThing = new Array (1, 2, 3, 4);
+//loop to count food usage
 var loopCounter;
-	for (loopCounter = 1; loopCounter <= 4; loopCounter++)
+	for (loopCounter = 0; loopCounter < 4; loopCounter++)
 	{
-	numFood = 5 * numVar
-	console.log("You will need this much food " + numFood);	
+	numFood = 10 - someThing[loopCounter];
+	console.log("For the run "+ loopCounter + " you should have " + numFood +" pieces of food left, if you consume 1 per run.");	
+	
 	}
 	return numFood;
 };
 
 //String Function
-var stringFunction = function () 
+var stringFunction = function (playerRole, playerJob)
 {
-var playerRole = "DPS";
-var playerJob = "Bard";
-
-console.log("The role we need to fill is that of a " + playerRole +" playing as a " +playerJob +".");
-return playerRole;
-return playerJob;
-}
+var localStrVar = console.log("Role: " + playerRole + ", Job: " + playerJob);
+return localStrVar;
+};
 
 //MAIN CODE
 procedureFunction(myPrompt);
 myConfirm = confirm("CONFIRM SOMETHING");
 booleanReturn = booleanFunction(myConfirm, "Buttons in a Blanket");
-numberReturn = numberFunction(5);
-stringFunction();
+numberReturn = numberFunction();
+stringReturn = stringFunction("DPS", "Bard");
+
+
+
 
 
 
